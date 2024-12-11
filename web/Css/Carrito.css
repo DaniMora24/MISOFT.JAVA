@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+body{
+    background-color: #fffcf1;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.title h1{
+     font-family: 'Great Vibes', cursive;
+     font-size: 50px;
+     text-align: center; 
+     margin: 0 20px;
+     display: block;
+     background-image: radial-gradient(#ffcce0, #f598bf, #ff75ae);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     padding: 10px;
+     -webkit-text-stroke-width: 0.8px;
+     -webkit-text-stroke-color: black;
+    
+}
+
+
+.imagen1, .imagen2{
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+  
+}
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin: 0 20px;
+    
+}
+.searchbar input[type=search]{
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.searchbar button[type=submit]{
+    width: 80px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f598bf;
+    color:#000000;
+    cursor: pointer;
+}
+.searchbar button[type=submit]:hover{
+    background-color: whitesmoke;
+}
+
+
+.name-cart {
+    background: #FFCCFF; /* Gradiente de fondo rosa a azul claro */
+    height: 50px; /* Altura del banner reducida */
+    border-radius: 30px;
+}
+
+
+
+.name-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 36px; /* Tamaño de fuente reducido */
+    color: #0D0D26; /* Color del texto en negro */
+    padding: 10px 0; /* Padding ajustado */
+    background-color:#FFCCFF ;
+    
+   
+}
+.main-h1 h1{
+    font-family: 'good vibes', cursive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size:24px;
+    background-color:#FFCCFF;
+}
+
+.menu-banner a {
+    width: 50px;
+    height: 30px;
+    padding:8px 15px ;
+    background-color: #296CF2; /* Color del botón azul oscuro */
+    color: #fffcf1; /* Color del texto en blanco */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-align: right;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+   left: 550px;
+  bottom:5px;
+    
+
+}
+
+.menu-banner a:hover {
+    background-color: #59D9D9; /* Color de hover turquesa */
+}
+
+.contenedor {
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fffcf1;
+}
+
+.contenedor .contenedor-items {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px; /* Espacio entre elementos */
+    width: 100%;
+    transition: .5s;
+}
+
+.contenedor .contenedor-items .item {
+    max-width: 220px; /* Ajuste del ancho máximo */
+    margin: auto;
+    border: 1px solid #F280CA; /* Borde del elemento en rosa */
+    border-radius: 10px;
+    padding: 20px; /* Padding */
+    transition: .3s;
+    position: relative; /* Para posicionar el botón de eliminar */
+    background-color: #f5f6fa; /* Color de fondo del elemento */
+}
+
+.contenedor .contenedor-items .item .img-item {
+    width: 100%;
+    height: auto; /* Mantiene la proporción */
+}
+
+.contenedor .contenedor-items .item:hover {
+    box-shadow: 0 0 10px #44AFF2; /* Sombra más suave */
+    scale: 1.05;
+}
+
+.contenedor .contenedor-items .item .titulo-item {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0D0D26; /* Color del texto en negro */
+}
+
+.contenedor .contenedor-items .item .precio-item {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px; /* Tamaño de fuente ajustado */
+    color: #F280CA; /* Color del precio en rosa */
+}
+
+.contenedor .contenedor-items .item .boton-item {
+    display: block;
+    margin: 20px auto; /* Margen */
+    border: none;
+    background-color: #296CF2; /* Color del botón azul oscuro */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para el carrito */
+.carrito {
+    border: 1px solid #F280CA; /* Borde del carrito en rosa */
+    width: 35%; /* Ancho del carrito */
+    margin-top: 30px; /* Margen superior */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta desbordes */
+    margin-bottom: auto;
+    position: sticky;
+    top: 0;
+    transition: .3s;
+    /* ocultar */
+    margin-right: -100%;
+    opacity: 0;
+}
+
+.carrito .header-carrito {
+    background-color: #F280CA; /* Color de fondo del header del carrito */
+    color: #fff;
+    text-align: center;
+    padding: 30px 0; /* Padding */
+}
+
+.carrito .carrito-item {
+    display: flex; /* Flexbox para alineación */
+    align-items: center; /* Centrado vertical */
+    position: relative; /* Posicionamiento relativo */
+    border-bottom: 1px solid #bdc3c7; /* Borde inferior */
+    padding: 20px; /* Espaciado interno */
+}
+
+.carrito .carrito-item img {
+    margin-right: 30px; /* Espacio a la derecha de la imagen */
+}
+
+.carrito .carrito-item .carrito-item-titulo {
+    display: block;
+    font-weight: bold; /* Negrita */
+    margin-bottom: 10px; /* Margen inferior */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    color: #0D0D26; /* Color del texto en negro */
+}
+
+.carrito .carrito-item .selector-cantidad {
+    display: inline-block;
+    margin-right: 35px; /* Margen a la derecha */
+}
+
+.carrito .carrito-item .carrito-item-cantidad {
+    border: none; /* Sin borde */
+    font-size: 18px; /* Tamaño de fuente */
+    background-color: transparent; /* Fondo transparente */
+    display: inline-block;
+    width: 30px; /* Ancho */
+    padding: 5px; /* Padding */
+    text-align: center; /* Alinear texto al centro */
+}
+
+.carrito .carrito-item .selector-cantidad i {
+    font-size: 18px; /* Tamaño de fuente */
+    width: 32px; /* Ancho */
+    height: 32px; /* Altura */
+    line-height: 32px; /* Centrado vertical */
+    text-align: center; /* Alinear texto al centro */
+    border-radius: 50%; /* Bordes redondeados */
+    border: 1px solid #296CF2; /* Borde */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+.carrito .carrito-item .carrito-item-precio {
+    font-weight: bold; /* Negrita */
+    display: inline-block; /* Alineación de bloque en línea */
+    font-size: 18px; /* Tamaño de fuente */
+    margin-bottom: 5px; /* Margen inferior */
+    color: #F280CA; /* Color del precio en rosa */
+}
+
+.carrito .carrito-item .btn-eliminar {
+    position: absolute; /* Posición absoluta para colocar el botón */
+    right: 15px; /* Ajustar según sea necesario */
+    top: 15px; /* Ajustar según sea necesario */
+    color: #F280CA; /* Color del ícono de eliminar en rosa */
+    font-size: 20px; /* Tamaño del ícono */
+    width: 40px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    line-height: 40px; /* Centrado vertical */
+    text-align: center; /* Alinear texto al centro */
+    border-radius: 50%; /* Bordes redondeados */
+    border: 1px solid #bdc3c7; /* Borde */
+    cursor: pointer; /* Cursor de puntero */
+    display: block; /* Mostrar como bloque */
+    background: transparent; /* Fondo transparente */
+    z-index: 20; /* Z-index para superposición */
+}
+
+.carrito .carrito-item .btn-eliminar i {
+    pointer-events: none; /* Deshabilitar eventos del puntero */
+}
+
+.carrito-total {
+    background-color: #f3f3f3; /* Color de fondo del total */
+    padding: 30px; /* Padding */
+}
+
+.carrito-total .btn-pagar {
+    display: block;
+    width: 98%;
+    border: none;
+    background: #296CF2; /* Color del botón de pagar azul oscuro */
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.carrito-total .btn-pagar:hover {
+    scale: 1.05; /* Efecto de hover */
+}

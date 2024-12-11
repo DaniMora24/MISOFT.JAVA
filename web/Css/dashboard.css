@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    justify-content: space-between;
+}
+.container1 {
+    display: flex; /* Usar flexbox para colocar las secciones una al lado de la otra */
+    justify-content: space-between; /* Opcional: para añadir espacio entre las secciones */
+    margin-top: 15px; /* Margen superior para el contenedor */
+    
+
+}
+
+.welcome, .welcome2, .welcome3 {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(255, 105, 193, 0.886);
+    flex: 1; /* Hacer que todos los elementos ocupen el mismo espacio */
+    text-align: center;
+    margin: 0 10px; /* Margen lateral entre las secciones */
+    min-width: 250px; /* Ancho mínimo para asegurar que no se colapsen */
+    height: 120px; /* Asegura que todas las secciones tengan la misma altura */
+}
+
+
+header {
+    background:  #F280CA;
+    padding: 10px; 
+    width: 10%;
+    height: 100%;
+}
+
+.menu-toggle {
+    background: linear-gradient(to right, #F280CA, #44AFF2);
+    color: rgb(255, 255, 255);
+    border: solid 2px #ff0f9b;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+.banner {
+    background: linear-gradient(to right, #F280CA, #44AFF2); /* Degradado de color de fondo */
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    font-size: 18px; /* Tamaño de fuente */
+    position: absolute; /* Posicionamiento relativo para el banner */
+    z-index: 10; /* Asegura que el banner esté encima de otros elementos */
+    width:90%;
+    height: 10%;
+    margin-left: 200px;
+}
+
+.banner h1 {
+    font-size: 50px; /* Tamaño de la fuente del título */
+    background: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 100, 172)); /* Degradado de color para el texto */
+    -webkit-background-clip: text; /* Clip el fondo al área del texto en Webkit */
+    background-clip: text; /* Clip el fondo al área del texto */
+    color: transparent; /* Hacer el color del texto transparente para ver el fondo */
+    
+
+}
+
+
+.sidebar {
+    background:  #F280CA;
+    color: rgb(7, 7, 7);
+    width: 105px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%); /* Ocultar inicialmente */
+    position: absolute; /* Asegurar que se posicione correctamente */
+    top: 8%;
+    left: 0;
+}
+
+.sidebar.show {
+    transform: translateX(0); /* Mostrar el menú */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0; /* Ajustar el margen */
+}
+
+.sidebar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px; 
+    display: flex; 
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ff63d3; /* Color de fondo al pasar el cursor */
+    color: white; /* Color del texto (puedes cambiarlo si deseas) */
+}
+
+.dropdown {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px; /* Espacio entre el enlace y la sublista */
+    box-shadow: 0 2px 10px rgba(249, 86, 178, 0.505); /* Añadir box-shadow a la sublista */
+    background: #f8a0d4; /* Fondo del dropdown */
+    border-radius: 6px;
+}
+
+.dropdown.show {
+    display: block;
+    margin-top: 10px;
+}
+
+.dropdown li {
+    margin: 5px 0;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    flex-direction: column; /* Cambiado a columna para apilar los elementos */
+}
+
+.welcome, .welcome1 {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(255, 105, 193, 0.886);
+    width: 300px;
+    text-align: center;
+    margin-bottom: 15px; /* Espacio entre la bienvenida y la tabla */
+}
+
+.data-table {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(255, 105, 193, 0.886);
+    width: 95%;
+    overflow-x: auto; /* Habilitar desplazamiento horizontal si es necesario */
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8a0d4;
+    color: white;
+}
+
+.btn {
+    background-color: #ff63d3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #ff0f9b;
+}
+
+.delete {
+    background-color: #e74c3c;
+}
+
+.delete:hover {
+    background-color: #c0392b;
+}

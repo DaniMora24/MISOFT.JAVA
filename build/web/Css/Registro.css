@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("../Img/patitas gato.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.Register {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.Register h1 {
+  text-align: center;
+  font-family: "Snell Roundhand, cursive";
+  color: #e57d90;
+  font-size: 35px;
+  -webkit-text-stroke: 0.5px black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form div {
+  position: relative;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="password"], input[type="date"], select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #fd728c;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #333;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+input:focus + label, input:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 12px;
+  color: #fd728c;
+}
+
+.Remember {
+  display: flex;
+  align-items: center;
+}
+
+.Remember label {
+  display: flex;
+  align-items: center;
+}
+
+.Remember input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Estilos para el checkbox personalizado (si decides usar uno) */
+.checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fd728c;
+  border-radius: 4px;
+  appearance: none;
+  background-color: white;
+  position: relative;
+}
+
+.checkbox:checked {
+  background-color: #fd728c;
+}
+
+.checkbox:checked::after {
+  content: '';
+  position: flex;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 2px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #fd728c;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e57d90;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+.botones {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.botones li {
+  margin: 0;
+  border-radius: 50%; /* Radio externo para el botón */
+  padding: 5px; /* Espacio alrededor del botón */
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo del botón */
+  transition: background-color 0.3s ease;
+}
+
+.botones li:hover {
+  background-color: #fd728c; /* Color de fondo al pasar el mouse */
+}
+
+.botones i {
+  font-size: 24px;
+  color: #000;
+  transition: transform 0.3s ease;
+}
+
+.botones i:hover {
+  transform: scale(1.2);
+  color: #fd728c;
+}

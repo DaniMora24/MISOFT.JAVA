@@ -1,0 +1,531 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.title h1{
+     font-family: 'Great Vibes', cursive;
+     font-size: 50px;
+     text-align: center; 
+     margin: 0 20px;
+     display: block;
+     background-image: radial-gradient(#ffcce0, #f598bf, #ff75ae);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     padding: 10px;
+     -webkit-text-stroke-width: 0.8px;
+     -webkit-text-stroke-color: black;
+    
+}
+
+
+.imagen1, .imagen2{
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+  
+}
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin: 0 20px;
+    
+}
+.searchbar input[type=search]{
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.searchbar button[type=submit]{
+    width: 80px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f598bf;
+    color:#000000;
+    cursor: pointer;
+}
+.searchbar button[type=submit]:hover{
+    background-color: whitesmoke;
+}
+
+.banner{
+    background-color: #ffbcd0;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.1);
+    
+}
+.Image-button{
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.Image{
+    width: 100%;
+    max-width: 100%;
+    height: 310px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.texto{
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.cuadro{
+    background-color: #ffd2df;
+ padding: 30px;
+    border: 1px solid #ffd2df;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin-left: 10px ;
+   margin-right: 10px;
+    
+    
+}
+
+.texto h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.banner p{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.opciones{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:159%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    border-radius: 30px;
+    
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fffcf1;
+}
+
+/* Header styles */
+header {
+    background-color: #fffcf1; /* Color de fondo del header */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFCCFF ; /* Color del menú */
+    padding: 15px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    
+}
+.menu a:hover{
+    background-color: #ff5990;
+    transform: scale(1.1);
+    
+}
+
+.logo-1 {
+    width: 150px;
+}
+
+.menulog {
+    display: none;
+}
+
+.logomenu {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu-1 ul,
+.menu-2 ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-1 a {
+    font-size: 20px; /* Ajusta este valor según el tamaño que desees */
+    font-weight: bold; /* Opcional: Si deseas que el texto sea más grueso */
+    color: #050000; /* Color del texto en el menú */
+}
+
+.menu-1 li,
+.menu-2 li {
+    margin: 0 15px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+a {
+    color: #000000; /* Color de los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+}
+#Loginbutton{
+
+    border:  #ff5990;
+    background-color: #ff5990;
+}
+ #Loginbutton:hover {
+    text-decoration: underline;
+    background-color: #ffbcd0; /* Color al pasar el ratón por encima de los enlaces */
+}
+
+/* Slider Styles */
+.swiper {
+    height: 400px;
+    margin: 20px 0;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-txt {
+    width: 50%;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.slide-txt h1 {
+    font-size: 3em;
+    color: #F280CA; /* Color del título del slider */
+}
+
+.slide-txt p {
+    margin: 10px 0;
+    font-size: larger;
+}
+
+.slide-img {
+    width: 50%;
+    height: 50%;
+}
+
+.botones {
+    margin-top: 15px;
+}
+
+.btn-1 {
+    background-color: #44AFF2; /* Color del botón */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: #296CF2; /* Color del botón al pasar el ratón */
+}
+
+.products {
+    background-color: #fffcf1;;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+
+.tabs label {
+    width: 15%;
+    order: 1;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    color: #0D0D26; /* Color del texto de las tabs */
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.tabs .tab {
+    order: 99;
+    flex-wrap: 1;
+    width: 100%;
+    display: none;
+    padding-top: 25px;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+    border-bottom: 2px solid #F280CA; /* Color del borde de la tab seleccionada */
+    color: #F280CA; /* Color del texto de la tab seleccionada */
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+/* Product Styles */
+.product {
+    display: flex;
+    justify-content: space-between; /* Espaciado uniforme entre imagen y texto */
+    align-items: flex-start; /* Alineación superior */
+    border: 2px solid #44AFF2;
+    border-radius: 8px;
+    overflow: visible; /* Evitar desbordes */
+    margin: 15px auto;
+    padding: -2px;
+    max-width: 90%; /* Ajusta el ancho máximo del contenedor */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: white; /* Fondo blanco */
+    box-sizing: border-box;
+}
+
+.product-img {
+    flex: 1; /* Imagen ocupa una parte proporcional */
+    max-width: 350px; /* Limita el tamaño máximo de la imagen */
+    position: relative;
+    margin-right: 20px; /* Espaciado con el texto */
+    text-align: center;
+    
+}
+
+.product-img h4 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    z-index: 2;
+}
+
+.product-img img {
+    width: 70%; /* La imagen ocupa todo el ancho disponible */
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen se ajuste al tamaño sin distorsionarse */
+    border-radius: 5px;
+}
+
+.product-txt {
+    flex: 2; /* El texto ocupa más espacio que la imagen */
+    text-align: left;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    position: relative;
+}
+
+.product-txt h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-txt p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.product-txt span {
+    display: block; /* Asegura que el precio esté en su propia línea */
+    color: #0D0D26;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-3 {
+    position: absolute;
+    bottom: 10px; /* Coloca el botón al final del contenedor de texto */
+    right: 10px; /* Lo alinea al lado derecho */
+}
+
+.btn-3 a {
+    display: inline-block;
+    background-color: #296CF2; /* Color del botón */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn-3 a:hover {
+    background-color: #44AFF2; /* Cambia el color al pasar el ratón */
+}
+
+
+/* Info section */
+.info {
+    background-color: #f76a88; /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color de texto */
+    padding: 20px; /* Espacio interno */
+    display: flex; /* Usa flexbox para disposición */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    z-index: 2;
+    margin-top: 90px;
+}
+
+.info-img img {
+    width: 150px; 
+}
+
+.info-text {
+    max-width: 600px; 
+    font-size: larger;
+    font-family: arial;
+    
+}
+
+.btn-2 {
+    background-color: #44AFF2; /* Color del botón en la sección de información */
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    margin: 15px; 
+    margin-top: 50px; 
+    left: 150px;
+    
+    
+}
+
+.btn-2:hover {
+    background-color: #296CF2; /* Color del botón al pasar el ratón en la sección de información */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #ff94ab; /* Color del fondo del footer */
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex; /* Mantiene el diseño en flex */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    justify-content: space-between; /* Espacio entre el mapa y los enlaces */
+}
+
+.footer img {
+    width: 50px; /* Tamaño de las imágenes en el footer */
+    height: 50px; /* Tamaño de las imágenes en el footer */
+}
+
+/* Estilos generales para el contenedor de las redes sociales */
+.socials {
+    display: flex; /* Muestra los elementos en una sola fila */
+    justify-content: space-around; /* Distribuye el espacio entre los iconos */
+    align-items: center; /* Centra verticalmente los iconos */
+    margin: 20px 0; /* Añade algo de margen superior e inferior */
+}
+
+/* Estilos para cada icono social */
+.social, .social1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Ajusta el tamaño del contenedor */
+    height: 60px; /* Ajusta la altura del contenedor */
+    border-radius: 50%; /* Opción para hacer los iconos circulares */
+    overflow: hidden;
+    background-color: #050000; /* Fondo suave para resaltar los iconos */
+}
+
+.social1 {
+    width: 120px;
+    height: 120px;
+}
+
+.mapa {
+    height: 300px; /* Mantén esta altura ajustada */
+    width: 50%; /* Ajusta el ancho del mapa */
+    margin-bottom: 20px; /* Espacio inferior para separar del contenido siguiente */
+    font-weight: 400; /* Elimina el uso de porcentaje, ya que no es válido para font-weight */
+}
+
+.links {
+    margin-left: 20px; /* Espacio entre el mapa y los enlaces */
+    display: flex;
+    flex-direction: column; /* Alinea los enlaces verticalmente */
+}
+
+/* Responsive styles */
+@media (max-width: 980px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logomenu {
+        display: none;
+    }
+
+    .menulog {
+        display: block;
+        margin: 10px 0; /* Espacio entre la lista del menú */
+    }
+
+    .tabs {
+        flex-direction: column; /* Alinea las tabs verticalmente en pantallas pequeñas */
+    }
+
+    .product {
+        flex-direction: column; /* Cambia la dirección en pantallas pequeñas */
+    }
+
+    .product-img, .product-txt {
+        width: 100%; /* Asegura que ambos ocupen el 100% del ancho */
+        margin-left: 0; /* Elimina margen en pantallas pequeñas */
+    }
+
+    .swiper {
+        height: 300px; /* Ajusta la altura del slider para pantallas pequeñas */
+    }
+}
